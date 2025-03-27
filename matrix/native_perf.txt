@@ -1,0 +1,25 @@
+# started on Thu Mar 27 15:11:24 2025
+
+
+ Performance counter stats for './native':
+
+       519,433,764      cpu_atom/instructions/           #    0.64  insn per cycle              (0.05%)
+     3,766,544,341      cpu_core/instructions/           #    3.28  insn per cycle              (99.95%)
+       808,155,675      cpu_atom/cycles/                 #    1.515 GHz                         (0.05%)
+     1,149,264,951      cpu_core/cycles/                 #    2.154 GHz                         (99.95%)
+            533.43 msec task-clock                       #    0.998 CPUs utilized             
+        18,056,561      cpu_atom/cache-references/       #   33.850 M/sec                       (0.05%)
+        14,788,453      cpu_core/cache-references/       #   27.723 M/sec                       (99.95%)
+         3,731,802      cpu_atom/cache-misses/           #   20.67% of all cache refs           (0.05%)
+           461,037      cpu_core/cache-misses/           #    3.12% of all cache refs           (99.95%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       141,486,856      cpu_core/L1-dcache-load-misses/                                         (99.95%)
+                 0      cpu_atom/LLC-load-misses/                                               (0.05%)
+           192,569      cpu_core/LLC-load-misses/                                               (99.95%)
+
+       0.534678207 seconds time elapsed
+
+       0.526649000 seconds user
+       0.007994000 seconds sys
+
+

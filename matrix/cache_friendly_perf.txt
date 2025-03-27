@@ -1,0 +1,25 @@
+# started on Thu Mar 27 15:11:25 2025
+
+
+ Performance counter stats for './cache_friendly':
+
+     1,046,187,541      cpu_atom/instructions/           #    1.68  insn per cycle              (2.30%)
+     3,183,941,902      cpu_core/instructions/           #    3.75  insn per cycle              (97.70%)
+       623,151,605      cpu_atom/cycles/                 #    1.594 GHz                         (2.30%)
+       847,972,447      cpu_core/cycles/                 #    2.170 GHz                         (97.70%)
+            390.84 msec task-clock                       #    0.997 CPUs utilized             
+         2,041,197      cpu_atom/cache-references/       #    5.223 M/sec                       (2.30%)
+        16,269,807      cpu_core/cache-references/       #   41.627 M/sec                       (97.70%)
+         1,056,019      cpu_atom/cache-misses/           #   51.74% of all cache refs           (2.30%)
+           330,112      cpu_core/cache-misses/           #    2.03% of all cache refs           (97.70%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+        13,510,594      cpu_core/L1-dcache-load-misses/                                         (97.70%)
+                 0      cpu_atom/LLC-load-misses/                                               (2.30%)
+            21,199      cpu_core/LLC-load-misses/                                               (97.70%)
+
+       0.392041459 seconds time elapsed
+
+       0.382973000 seconds user
+       0.008975000 seconds sys
+
+

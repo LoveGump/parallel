@@ -4,7 +4,9 @@
 #include <cstring>
 #include <random>
 #include <iomanip>
+#include <algorithm>
 
+using namespace std;
 constexpr int MAXN = 10000;
 
 double A[MAXN][MAXN];
@@ -13,9 +15,9 @@ double result_naive[MAXN], result_opt[MAXN];
 
 void fill_random(int n) {
     // 使用C++随机数生成器
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_real_distribution<double> dist(0.0, 1.0);
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_real_distribution<double> dist(0.0, 1.0);
     
     for (int i = 0; i < n; ++i) {
         v[i] = dist(gen);
@@ -24,9 +26,9 @@ void fill_random(int n) {
         }
     }
 }
-// 朴素算法 
+
 void naive_column_dot(int n, double A[][MAXN], double v[], double result[]) {
-    std::memset(result, 0, n * sizeof(double));
+    memset(result, 0, n * sizeof(double));
     
     for (int j = 0; j < n; ++j) {
         for (int i = 0; i < n; ++i) {
@@ -34,35 +36,37 @@ void naive_column_dot(int n, double A[][MAXN], double v[], double result[]) {
         }
     }
 }
+
 int main(int argc, char *argv[]) {
     int n = 1024;
     int repeat = 100;
-    
-    // 修正命令行参数处理
-    if(argc > 1) {
-        n = std::stoi(argv[1]);
-    }
-    
-    std::cout << "运行 " << repeat << " 次重复" << std::endl;
+
+    cout << "重复: " << repeat << " 规模: " << n << endl;
     fill_random(n);
 
     // 保留gettimeofday计时
     struct timeval start, end;
-    double elapsed;
+    double elapsed;// 记录每次运行的时间
 
     // 计时naive算法
-    gettimeofday(&start, nullptr);
-    for (int r = 0; r < repeat; ++r) {
-        naive_column_dot(n, A, v, result_naive);
-    }
-
+    double naive_total = 0.0;
     
-    gettimeofday(&end, nullptr);
-    elapsed = (end.tv_sec - start.tv_sec) * 1e6;
-    elapsed = (elapsed + (end.tv_usec - start.tv_usec)) / 1e6;
-    std::cout << "Naive algorithm: " << std::fixed << std::setprecision(6) 
-              << elapsed / repeat << " seconds" << std::endl;
-
+    for (int r = 0; r < repeat; ++r) {
+        gettimeofday(&start, nullptr);
+        naive_column_dot(n, A, v, result_naive);
+        gettimeofday(&end, nullptr);
+        
+        elapsed = (end.tv_sec - start.tv_sec) * 1e6;
+        elapsed = (elapsed + (end.tv_usec - start.tv_usec)); // 微秒单位
+        
+        naive_total += elapsed;
+    }
+    
+    double naive_avg = naive_total / repeat;
+    
+    // 打印统计信息
+    cout << fixed << setprecision(2);
+    cout << "平均时间: " << naive_avg << " us" << endl;
 
     return 0;
 }
