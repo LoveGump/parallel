@@ -34,8 +34,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/gump/pall/matrix",
-      "program": "/home/gump/pall/matrix/build/Debug/outDebug",
+      "cwd": "/home/gump/pall/add",
+      "program": "/home/gump/pall/add/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

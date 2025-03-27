@@ -1,0 +1,25 @@
+# started on Thu Mar 27 14:40:21 2025
+
+
+ Performance counter stats for './inplace':
+
+        81,812,199      cpu_atom/instructions/           #    1.78  insn per cycle              (16.56%)
+       219,226,642      cpu_core/instructions/           #    4.33  insn per cycle              (83.44%)
+        45,855,736      cpu_atom/cycles/                 #    1.792 GHz                         (16.56%)
+        50,682,538      cpu_core/cycles/                 #    1.980 GHz                         (83.44%)
+             25.59 msec task-clock                       #    0.963 CPUs utilized             
+           232,588      cpu_atom/cache-references/       #    9.087 M/sec                       (16.56%)
+            39,530      cpu_core/cache-references/       #    1.544 M/sec                       (83.44%)
+            90,358      cpu_atom/cache-misses/           #   38.85% of all cache refs           (16.56%)
+             5,820      cpu_core/cache-misses/           #   14.72% of all cache refs           (83.44%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+         1,299,101      cpu_core/L1-dcache-load-misses/                                         (83.44%)
+               259      cpu_atom/LLC-load-misses/                                               (16.56%)
+               322      cpu_core/LLC-load-misses/                                               (83.44%)
+
+       0.026580075 seconds time elapsed
+
+       0.025590000 seconds user
+       0.001023000 seconds sys
+
+

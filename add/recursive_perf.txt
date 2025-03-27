@@ -1,0 +1,25 @@
+# started on Thu Mar 27 14:40:21 2025
+
+
+ Performance counter stats for './recursive':
+
+       116,386,308      cpu_atom/instructions/           #    1.33  insn per cycle              (5.14%)
+       330,287,810      cpu_core/instructions/           #    3.55  insn per cycle              (94.86%)
+        87,473,970      cpu_atom/cycles/                 #    1.783 GHz                         (5.14%)
+        93,159,568      cpu_core/cycles/                 #    1.899 GHz                         (94.86%)
+             49.05 msec task-clock                       #    0.982 CPUs utilized             
+           674,677      cpu_atom/cache-references/       #   13.755 M/sec                       (5.14%)
+            46,559      cpu_core/cache-references/       #  949.250 K/sec                       (94.86%)
+           345,908      cpu_atom/cache-misses/           #   51.27% of all cache refs           (5.14%)
+            12,041      cpu_core/cache-misses/           #   25.86% of all cache refs           (94.86%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+           572,490      cpu_core/L1-dcache-load-misses/                                         (94.86%)
+               136      cpu_atom/LLC-load-misses/                                               (5.14%)
+               736      cpu_core/LLC-load-misses/                                               (94.86%)
+
+       0.049952425 seconds time elapsed
+
+       0.047921000 seconds user
+       0.001996000 seconds sys
+
+

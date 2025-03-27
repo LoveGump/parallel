@@ -1,0 +1,25 @@
+# started on Thu Mar 27 14:40:21 2025
+
+
+ Performance counter stats for './two_way':
+
+        59,909,939      cpu_atom/instructions/           #    1.56  insn per cycle              (19.14%)
+       106,828,351      cpu_core/instructions/           #    2.64  insn per cycle              (80.86%)
+        38,363,654      cpu_atom/cycles/                 #    1.803 GHz                         (19.14%)
+        40,482,342      cpu_core/cycles/                 #    1.903 GHz                         (80.86%)
+             21.27 msec task-clock                       #    0.952 CPUs utilized             
+           191,158      cpu_atom/cache-references/       #    8.986 M/sec                       (19.14%)
+            36,529      cpu_core/cache-references/       #    1.717 M/sec                       (80.86%)
+            81,255      cpu_atom/cache-misses/           #   42.51% of all cache refs           (19.14%)
+             5,970      cpu_core/cache-misses/           #   16.34% of all cache refs           (80.86%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+         1,217,332      cpu_core/L1-dcache-load-misses/                                         (80.86%)
+               365      cpu_atom/LLC-load-misses/                                               (19.14%)
+               398      cpu_core/LLC-load-misses/                                               (80.86%)
+
+       0.022353132 seconds time elapsed
+
+       0.019291000 seconds user
+       0.003046000 seconds sys
+
+
