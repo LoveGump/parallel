@@ -1,0 +1,3 @@
+file_name,cpu_core_instructions,cpu_core_cycles,task_clock,IPC,Cache_miss_rate,cpu_core_cache_references,cpu_core_cache_misses
+native_perf.txt,3766544341,1149264951,533.43,3.2774,0.0312,14788453,461037
+cache_friendly_perf.txt,3183941902,847972447,390.84,3.7548,0.0203,16269807,330112

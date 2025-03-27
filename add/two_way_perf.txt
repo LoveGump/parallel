@@ -1,25 +1,25 @@
-# started on Thu Mar 27 14:40:21 2025
+# started on Thu Mar 27 18:23:40 2025
 
 
  Performance counter stats for './two_way':
 
-        59,909,939      cpu_atom/instructions/           #    1.56  insn per cycle              (19.14%)
-       106,828,351      cpu_core/instructions/           #    2.64  insn per cycle              (80.86%)
-        38,363,654      cpu_atom/cycles/                 #    1.803 GHz                         (19.14%)
-        40,482,342      cpu_core/cycles/                 #    1.903 GHz                         (80.86%)
-             21.27 msec task-clock                       #    0.952 CPUs utilized             
-           191,158      cpu_atom/cache-references/       #    8.986 M/sec                       (19.14%)
-            36,529      cpu_core/cache-references/       #    1.717 M/sec                       (80.86%)
-            81,255      cpu_atom/cache-misses/           #   42.51% of all cache refs           (19.14%)
-             5,970      cpu_core/cache-misses/           #   16.34% of all cache refs           (80.86%)
+        24,972,817      cpu_atom/instructions/           #    1.51  insn per cycle              (37.30%)
+       141,037,059      cpu_core/instructions/           #    2.64  insn per cycle              (62.70%)
+        16,572,949      cpu_atom/cycles/                 #    1.592 GHz                         (37.30%)
+        53,364,494      cpu_core/cycles/                 #    5.125 GHz                         (62.70%)
+             10.41 msec task-clock                       #    0.908 CPUs utilized             
+           101,243      cpu_atom/cache-references/       #    9.723 M/sec                       (37.30%)
+            41,047      cpu_core/cache-references/       #    3.942 M/sec                       (62.70%)
+            62,395      cpu_atom/cache-misses/           #   61.63% of all cache refs           (37.30%)
+            12,843      cpu_core/cache-misses/           #   31.29% of all cache refs           (62.70%)
    <not supported>      cpu_atom/L1-dcache-load-misses/                                       
-         1,217,332      cpu_core/L1-dcache-load-misses/                                         (80.86%)
-               365      cpu_atom/LLC-load-misses/                                               (19.14%)
-               398      cpu_core/LLC-load-misses/                                               (80.86%)
+           234,962      cpu_core/L1-dcache-load-misses/                                         (62.70%)
+               597      cpu_atom/LLC-load-misses/                                               (37.30%)
+               636      cpu_core/LLC-load-misses/                                               (62.70%)
 
-       0.022353132 seconds time elapsed
+       0.011464676 seconds time elapsed
 
-       0.019291000 seconds user
-       0.003046000 seconds sys
+       0.007705000 seconds user
+       0.003852000 seconds sys
 
 

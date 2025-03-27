@@ -1,0 +1,3 @@
+file_name,cpu_core_instructions,cpu_core_cycles,task_clock,cpu_core_cache_references,cpu_core_cache_misses,cpu_core_L1_dcache_load_misses,cpu_core_LLC_load_misses,L1_hit_rate,LLC_hit_rate
+native_perf.txt,3766544341,1149264951,533.43,14788453,461037,141486856,192569,-8.56738720405711,0.986978421610428
+cache_friendly_perf.txt,3183941902,847972447,390.84,16269807,330112,13510594,21199,0.16959100989950282,0.9986970343286801
