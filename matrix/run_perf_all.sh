@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # 参数列表
-params=(10 20 30 40 50 60 70 80 90 100 200 300 400 500 600 700 800 900 1000 2000 3000 4000 5000 6000 7000 8000 9000)
+params=(10 20 30 50 70 100 200 400 450 500 550 600 700 800 900 1000 1300 1400 1500 1600 1700 1800 1900 2000 2200 3000 4000 )
 
 # 要测试的程序
-PROGRAM="./cache_friendly"
+PROGRAM="./common"
 
 # 创建结果文件
-RESULTS_CSV="matrix_all_results.csv"
+RESULTS_CSV="common.csv"
 
 # 写入CSV表头
 echo "规模,朴素算法(us),优化算法(us),加速比" > $RESULTS_CSV
