@@ -1,0 +1,24 @@
+重复10 规模40
+
+=== Naive 算法统计 ===
+平均时间: 11.60 us
+
+=== 优化算法统计 ===
+平均时间: 7.60 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.53x
+
+ Performance counter stats for './cache_friendly 40':
+
+            43,606      cpu_atom/cache-references/                                            
+     <not counted>      cpu_core/cache-references/                                              (0.00%)
+            21,795      cpu_atom/cache-misses/           #   49.98% of all cache refs         
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.003538411 seconds time elapsed
+
+       0.001789000 seconds user
+       0.001789000 seconds sys
+
+

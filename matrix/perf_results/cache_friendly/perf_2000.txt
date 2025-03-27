@@ -1,0 +1,24 @@
+重复10 规模2000
+
+=== Naive 算法统计 ===
+平均时间: 8898.20 us
+
+=== 优化算法统计 ===
+平均时间: 4122.20 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 2.16x
+
+ Performance counter stats for './cache_friendly 2000':
+
+         3,788,543      cpu_atom/cache-references/                                              (1.00%)
+        12,616,185      cpu_core/cache-references/                                              (99.00%)
+         1,739,790      cpu_atom/cache-misses/           #   45.92% of all cache refs           (1.00%)
+         3,298,366      cpu_core/cache-misses/           #   26.14% of all cache refs           (99.00%)
+
+       0.341543799 seconds time elapsed
+
+       0.325519000 seconds user
+       0.016025000 seconds sys
+
+

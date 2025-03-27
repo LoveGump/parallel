@@ -1,0 +1,24 @@
+重复10 规模5000
+
+=== Naive 算法统计 ===
+平均时间: 89788.50 us
+
+=== 优化算法统计 ===
+平均时间: 29788.10 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 3.01x
+
+ Performance counter stats for './cache_friendly 5000':
+
+        46,378,713      cpu_atom/cache-references/                                              (0.08%)
+       103,374,563      cpu_core/cache-references/                                              (99.92%)
+        22,575,635      cpu_atom/cache-misses/           #   48.68% of all cache refs           (0.08%)
+        66,280,301      cpu_core/cache-misses/           #   64.12% of all cache refs           (99.92%)
+
+       1.944723719 seconds time elapsed
+
+       1.890086000 seconds user
+       0.053973000 seconds sys
+
+

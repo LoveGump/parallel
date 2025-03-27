@@ -1,0 +1,24 @@
+重复10 规模6000
+
+=== Naive 算法统计 ===
+平均时间: 140825.40 us
+
+=== 优化算法统计 ===
+平均时间: 42712.20 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 3.30x
+
+ Performance counter stats for './cache_friendly 6000':
+
+        54,962,770      cpu_atom/cache-references/                                              (0.08%)
+       186,199,008      cpu_core/cache-references/                                              (99.92%)
+        23,696,411      cpu_atom/cache-misses/           #   43.11% of all cache refs           (0.08%)
+       104,553,127      cpu_core/cache-misses/           #   56.15% of all cache refs           (99.92%)
+
+       2.896659859 seconds time elapsed
+
+       2.819539000 seconds user
+       0.075987000 seconds sys
+
+

@@ -1,0 +1,24 @@
+重复10 规模3000
+
+=== Naive 算法统计 ===
+平均时间: 31917.00 us
+
+=== 优化算法统计 ===
+平均时间: 11423.20 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 2.79x
+
+ Performance counter stats for './cache_friendly 3000':
+
+     <not counted>      cpu_atom/cache-references/                                              (0.00%)
+        31,214,394      cpu_core/cache-references/                                            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+        19,213,258      cpu_core/cache-misses/           #   61.55% of all cache refs         
+
+       0.783145472 seconds time elapsed
+
+       0.766063000 seconds user
+       0.017001000 seconds sys
+
+

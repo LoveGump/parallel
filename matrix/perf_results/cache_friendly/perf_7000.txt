@@ -1,0 +1,24 @@
+重复10 规模7000
+
+=== Naive 算法统计 ===
+平均时间: 202985.40 us
+
+=== 优化算法统计 ===
+平均时间: 61217.00 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 3.32x
+
+ Performance counter stats for './cache_friendly 7000':
+
+     <not counted>      cpu_atom/cache-references/                                              (0.00%)
+       612,116,582      cpu_core/cache-references/                                            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+       171,300,048      cpu_core/cache-misses/           #   27.98% of all cache refs         
+
+       4.237755152 seconds time elapsed
+
+       4.122940000 seconds user
+       0.113998000 seconds sys
+
+

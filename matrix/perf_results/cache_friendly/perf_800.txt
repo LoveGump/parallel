@@ -1,0 +1,24 @@
+重复10 规模800
+
+=== Naive 算法统计 ===
+平均时间: 2968.70 us
+
+=== 优化算法统计 ===
+平均时间: 1512.70 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.96x
+
+ Performance counter stats for './cache_friendly 800':
+
+     <not counted>      cpu_atom/cache-references/                                              (0.00%)
+         2,091,068      cpu_core/cache-references/                                            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           258,477      cpu_core/cache-misses/           #   12.36% of all cache refs         
+
+       0.094865271 seconds time elapsed
+
+       0.087823000 seconds user
+       0.006985000 seconds sys
+
+

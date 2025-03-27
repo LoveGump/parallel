@@ -1,0 +1,24 @@
+重复10 规模80
+
+=== Naive 算法统计 ===
+平均时间: 33.50 us
+
+=== 优化算法统计 ===
+平均时间: 24.10 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.39x
+
+ Performance counter stats for './cache_friendly 80':
+
+            64,227      cpu_atom/cache-references/                                              (57.92%)
+            89,669      cpu_core/cache-references/                                              (42.08%)
+            20,984      cpu_atom/cache-misses/           #   32.67% of all cache refs           (57.92%)
+            29,667      cpu_core/cache-misses/           #   33.09% of all cache refs           (42.08%)
+
+       0.005757597 seconds time elapsed
+
+       0.001829000 seconds user
+       0.003659000 seconds sys
+
+

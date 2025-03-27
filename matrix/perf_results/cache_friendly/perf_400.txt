@@ -1,0 +1,24 @@
+重复10 规模400
+
+=== Naive 算法统计 ===
+平均时间: 711.80 us
+
+=== 优化算法统计 ===
+平均时间: 412.40 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.73x
+
+ Performance counter stats for './cache_friendly 400':
+
+           714,756      cpu_atom/cache-references/                                              (1.77%)
+           199,977      cpu_core/cache-references/                                              (98.23%)
+           114,991      cpu_atom/cache-misses/           #   16.09% of all cache refs           (1.77%)
+            69,625      cpu_core/cache-misses/           #   34.82% of all cache refs           (98.23%)
+
+       0.027076257 seconds time elapsed
+
+       0.022780000 seconds user
+       0.004141000 seconds sys
+
+

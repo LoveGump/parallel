@@ -1,0 +1,24 @@
+重复10 规模300
+
+=== Naive 算法统计 ===
+平均时间: 406.40 us
+
+=== 优化算法统计 ===
+平均时间: 255.90 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.59x
+
+ Performance counter stats for './cache_friendly 300':
+
+     <not counted>      cpu_atom/cache-references/                                              (0.00%)
+           114,249      cpu_core/cache-references/                                            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            54,623      cpu_core/cache-misses/           #   47.81% of all cache refs         
+
+       0.016668416 seconds time elapsed
+
+       0.014700000 seconds user
+       0.001960000 seconds sys
+
+

@@ -1,0 +1,24 @@
+重复10 规模100
+
+=== Naive 算法统计 ===
+平均时间: 49.30 us
+
+=== 优化算法统计 ===
+平均时间: 33.40 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.48x
+
+ Performance counter stats for './cache_friendly 100':
+
+            94,548      cpu_atom/cache-references/                                              (17.14%)
+            69,169      cpu_core/cache-references/                                              (82.86%)
+            21,622      cpu_atom/cache-misses/           #   22.87% of all cache refs           (17.14%)
+            26,353      cpu_core/cache-misses/           #   38.10% of all cache refs           (82.86%)
+
+       0.004669490 seconds time elapsed
+
+       0.001914000 seconds user
+       0.002872000 seconds sys
+
+

@@ -1,0 +1,24 @@
+重复10 规模1000
+
+=== Naive 算法统计 ===
+平均时间: 3796.10 us
+
+=== 优化算法统计 ===
+平均时间: 2089.60 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.82x
+
+ Performance counter stats for './cache_friendly 1000':
+
+           707,970      cpu_atom/cache-references/                                              (8.26%)
+         3,384,109      cpu_core/cache-references/                                              (91.74%)
+           416,173      cpu_atom/cache-misses/           #   58.78% of all cache refs           (8.26%)
+           343,175      cpu_core/cache-misses/           #   10.14% of all cache refs           (91.74%)
+
+       0.133789050 seconds time elapsed
+
+       0.125841000 seconds user
+       0.007927000 seconds sys
+
+

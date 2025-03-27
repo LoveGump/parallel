@@ -1,0 +1,24 @@
+重复10 规模9000
+
+=== Naive 算法统计 ===
+平均时间: 378426.40 us
+
+=== 优化算法统计 ===
+平均时间: 91659.00 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 4.13x
+
+ Performance counter stats for './cache_friendly 9000':
+
+       796,980,168      cpu_atom/cache-references/                                              (0.18%)
+     1,844,235,943      cpu_core/cache-references/                                              (99.82%)
+       477,202,847      cpu_atom/cache-misses/           #   59.88% of all cache refs           (0.18%)
+       350,845,385      cpu_core/cache-misses/           #   19.02% of all cache refs           (99.82%)
+
+       7.246710661 seconds time elapsed
+
+       7.075985000 seconds user
+       0.169975000 seconds sys
+
+

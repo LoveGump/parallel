@@ -1,0 +1,24 @@
+重复10 规模4000
+
+=== Naive 算法统计 ===
+平均时间: 56113.00 us
+
+=== 优化算法统计 ===
+平均时间: 18578.30 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 3.02x
+
+ Performance counter stats for './cache_friendly 4000':
+
+        10,781,378      cpu_atom/cache-references/                                              (0.49%)
+        59,737,728      cpu_core/cache-references/                                              (99.51%)
+         5,410,866      cpu_atom/cache-misses/           #   50.19% of all cache refs           (0.49%)
+        39,814,757      cpu_core/cache-misses/           #   66.65% of all cache refs           (99.51%)
+
+       1.307882079 seconds time elapsed
+
+       1.260551000 seconds user
+       0.046946000 seconds sys
+
+

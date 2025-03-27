@@ -1,0 +1,24 @@
+重复10 规模70
+
+=== Naive 算法统计 ===
+平均时间: 26.20 us
+
+=== 优化算法统计 ===
+平均时间: 17.50 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.50x
+
+ Performance counter stats for './cache_friendly 70':
+
+     <not counted>      cpu_atom/cache-references/                                              (0.00%)
+            64,516      cpu_core/cache-references/                                            
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            25,482      cpu_core/cache-misses/           #   39.50% of all cache refs         
+
+       0.004007762 seconds time elapsed
+
+       0.001582000 seconds user
+       0.002373000 seconds sys
+
+

@@ -1,0 +1,24 @@
+重复10 规模200
+
+=== Naive 算法统计 ===
+平均时间: 232.10 us
+
+=== 优化算法统计 ===
+平均时间: 121.60 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.91x
+
+ Performance counter stats for './cache_friendly 200':
+
+            81,260      cpu_atom/cache-references/                                              (72.73%)
+           161,079      cpu_core/cache-references/                                              (27.27%)
+            45,633      cpu_atom/cache-misses/           #   56.16% of all cache refs           (72.73%)
+            20,468      cpu_core/cache-misses/           #   12.71% of all cache refs           (27.27%)
+
+       0.011887226 seconds time elapsed
+
+       0.007405000 seconds user
+       0.004628000 seconds sys
+
+

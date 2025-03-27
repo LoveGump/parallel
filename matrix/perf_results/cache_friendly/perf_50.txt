@@ -1,0 +1,24 @@
+重复10 规模50
+
+=== Naive 算法统计 ===
+平均时间: 13.80 us
+
+=== 优化算法统计 ===
+平均时间: 9.10 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.52x
+
+ Performance counter stats for './cache_friendly 50':
+
+            57,372      cpu_atom/cache-references/                                              (65.58%)
+            76,075      cpu_core/cache-references/                                              (34.42%)
+            20,274      cpu_atom/cache-misses/           #   35.34% of all cache refs           (65.58%)
+            24,586      cpu_core/cache-misses/           #   32.32% of all cache refs           (34.42%)
+
+       0.003674887 seconds time elapsed
+
+       0.001837000 seconds user
+       0.001837000 seconds sys
+
+

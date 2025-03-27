@@ -1,0 +1,24 @@
+重复10 规模10
+
+=== Naive 算法统计 ===
+平均时间: 0.90 us
+
+=== 优化算法统计 ===
+平均时间: 0.80 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.12x
+
+ Performance counter stats for './cache_friendly 10':
+
+            46,016      cpu_atom/cache-references/                                              (62.77%)
+           112,819      cpu_core/cache-references/                                              (37.23%)
+            21,567      cpu_atom/cache-misses/           #   46.87% of all cache refs           (62.77%)
+            28,128      cpu_core/cache-misses/           #   24.93% of all cache refs           (37.23%)
+
+       0.004791337 seconds time elapsed
+
+       0.002354000 seconds user
+       0.002354000 seconds sys
+
+

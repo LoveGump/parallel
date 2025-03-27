@@ -1,0 +1,24 @@
+重复10 规模500
+
+=== Naive 算法统计 ===
+平均时间: 1033.90 us
+
+=== 优化算法统计 ===
+平均时间: 585.10 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.77x
+
+ Performance counter stats for './cache_friendly 500':
+
+           401,188      cpu_atom/cache-references/                                              (10.62%)
+           502,139      cpu_core/cache-references/                                              (89.38%)
+           182,896      cpu_atom/cache-misses/           #   45.59% of all cache refs           (10.62%)
+            79,038      cpu_core/cache-misses/           #   15.74% of all cache refs           (89.38%)
+
+       0.038315261 seconds time elapsed
+
+       0.037277000 seconds user
+       0.001007000 seconds sys
+
+

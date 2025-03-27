@@ -1,0 +1,24 @@
+重复10 规模30
+
+=== Naive 算法统计 ===
+平均时间: 6.70 us
+
+=== 优化算法统计 ===
+平均时间: 4.90 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.37x
+
+ Performance counter stats for './cache_friendly 30':
+
+            40,317      cpu_atom/cache-references/                                            
+     <not counted>      cpu_core/cache-references/                                              (0.00%)
+            12,102      cpu_atom/cache-misses/           #   30.02% of all cache refs         
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.003232919 seconds time elapsed
+
+       0.000000000 seconds user
+       0.003284000 seconds sys
+
+

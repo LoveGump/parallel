@@ -1,0 +1,24 @@
+重复10 规模600
+
+=== Naive 算法统计 ===
+平均时间: 1552.90 us
+
+=== 优化算法统计 ===
+平均时间: 802.30 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.94x
+
+ Performance counter stats for './cache_friendly 600':
+
+           406,943      cpu_atom/cache-references/                                              (11.84%)
+         1,332,061      cpu_core/cache-references/                                              (88.16%)
+           177,663      cpu_atom/cache-misses/           #   43.66% of all cache refs           (11.84%)
+           126,972      cpu_core/cache-misses/           #    9.53% of all cache refs           (88.16%)
+
+       0.052809860 seconds time elapsed
+
+       0.047844000 seconds user
+       0.004983000 seconds sys
+
+

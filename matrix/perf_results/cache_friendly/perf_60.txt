@@ -1,0 +1,24 @@
+重复10 规模60
+
+=== Naive 算法统计 ===
+平均时间: 25.60 us
+
+=== 优化算法统计 ===
+平均时间: 18.20 us
+
+=== 性能比较 ===
+加速比(Naive/Optimized): 1.41x
+
+ Performance counter stats for './cache_friendly 60':
+
+            43,563      cpu_atom/cache-references/                                            
+     <not counted>      cpu_core/cache-references/                                              (0.00%)
+            17,689      cpu_atom/cache-misses/           #   40.61% of all cache refs         
+     <not counted>      cpu_core/cache-misses/                                                  (0.00%)
+
+       0.003959137 seconds time elapsed
+
+       0.002050000 seconds user
+       0.002050000 seconds sys
+
+
