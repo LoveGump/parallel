@@ -1,25 +1,25 @@
-# started on Thu Mar 27 18:22:54 2025
+# started on Thu Mar 27 21:39:55 2025
 
 
  Performance counter stats for './inplace':
 
-        22,637,937      cpu_atom/instructions/           #    0.66  insn per cycle              (0.62%)
-       197,646,053      cpu_core/instructions/           #    3.86  insn per cycle              (99.38%)
-        34,356,980      cpu_atom/cycles/                 #    1.473 GHz                         (0.62%)
-        51,165,952      cpu_core/cycles/                 #    2.193 GHz                         (99.38%)
-             23.33 msec task-clock                       #    0.949 CPUs utilized             
-           810,214      cpu_atom/cache-references/       #   34.731 M/sec                       (0.62%)
-            71,096      cpu_core/cache-references/       #    3.048 M/sec                       (99.38%)
-            71,279      cpu_atom/cache-misses/           #    8.80% of all cache refs           (0.62%)
-            24,863      cpu_core/cache-misses/           #   34.97% of all cache refs           (99.38%)
+        22,103,575      cpu_atom/instructions/           #    1.08  insn per cycle              (10.53%)
+       109,867,687      cpu_core/instructions/           #    3.88  insn per cycle              (89.47%)
+        20,519,967      cpu_atom/cycles/                 #    1.582 GHz                         (10.53%)
+        28,302,645      cpu_core/cycles/                 #    2.182 GHz                         (89.47%)
+             12.97 msec task-clock                       #    0.926 CPUs utilized             
+           243,664      cpu_atom/cache-references/       #   18.789 M/sec                       (10.53%)
+            49,319      cpu_core/cache-references/       #    3.803 M/sec                       (89.47%)
+           101,914      cpu_atom/cache-misses/           #   41.83% of all cache refs           (10.53%)
+            16,409      cpu_core/cache-misses/           #   33.27% of all cache refs           (89.47%)
    <not supported>      cpu_atom/L1-dcache-load-misses/                                       
-         1,092,499      cpu_core/L1-dcache-load-misses/                                         (99.38%)
-                 0      cpu_atom/LLC-load-misses/                                               (0.62%)
-             1,557      cpu_core/LLC-load-misses/                                               (99.38%)
+           530,947      cpu_core/L1-dcache-load-misses/                                         (89.47%)
+                 0      cpu_atom/LLC-load-misses/                                               (10.53%)
+               871      cpu_core/LLC-load-misses/                                               (89.47%)
 
-       0.024583805 seconds time elapsed
+       0.013997811 seconds time elapsed
 
-       0.023562000 seconds user
-       0.001024000 seconds sys
+       0.012949000 seconds user
+       0.000996000 seconds sys
 
 

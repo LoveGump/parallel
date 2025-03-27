@@ -1,25 +1,25 @@
-# started on Thu Mar 27 18:22:54 2025
+# started on Thu Mar 27 21:39:55 2025
 
 
  Performance counter stats for './recursive':
 
-        88,872,165      cpu_atom/instructions/           #    1.31  insn per cycle              (5.09%)
-       331,501,225      cpu_core/instructions/           #    3.53  insn per cycle              (94.91%)
-        67,930,735      cpu_atom/cycles/                 #    1.587 GHz                         (5.09%)
-        93,862,649      cpu_core/cycles/                 #    2.193 GHz                         (94.91%)
-             42.79 msec task-clock                       #    0.967 CPUs utilized             
-           699,508      cpu_atom/cache-references/       #   16.346 M/sec                       (5.09%)
-            44,150      cpu_core/cache-references/       #    1.032 M/sec                       (94.91%)
-           283,905      cpu_atom/cache-misses/           #   40.59% of all cache refs           (5.09%)
-             8,217      cpu_core/cache-misses/           #   18.61% of all cache refs           (94.91%)
+        26,147,763      cpu_atom/instructions/           #    0.77  insn per cycle              (1.58%)
+       164,049,448      cpu_core/instructions/           #    3.41  insn per cycle              (98.42%)
+        33,925,039      cpu_atom/cycles/                 #    1.547 GHz                         (1.58%)
+        48,057,773      cpu_core/cycles/                 #    2.192 GHz                         (98.42%)
+             21.93 msec task-clock                       #    0.946 CPUs utilized             
+           674,955      cpu_atom/cache-references/       #   30.782 M/sec                       (1.58%)
+            79,547      cpu_core/cache-references/       #    3.628 M/sec                       (98.42%)
+           117,631      cpu_atom/cache-misses/           #   17.43% of all cache refs           (1.58%)
+            21,217      cpu_core/cache-misses/           #   26.67% of all cache refs           (98.42%)
    <not supported>      cpu_atom/L1-dcache-load-misses/                                       
-           552,016      cpu_core/L1-dcache-load-misses/                                         (94.91%)
-               845      cpu_atom/LLC-load-misses/                                               (5.09%)
-               572      cpu_core/LLC-load-misses/                                               (94.91%)
+            36,463      cpu_core/L1-dcache-load-misses/                                         (98.42%)
+                 0      cpu_atom/LLC-load-misses/                                               (1.58%)
+             2,415      cpu_core/LLC-load-misses/                                               (98.42%)
 
-       0.044253965 seconds time elapsed
+       0.023166699 seconds time elapsed
 
-       0.041151000 seconds user
-       0.003011000 seconds sys
+       0.020960000 seconds user
+       0.002096000 seconds sys
 
 

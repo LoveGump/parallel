@@ -55,7 +55,7 @@ double time_execution(Func&& func, int runs) {
 }
 
 int main() {
-    const size_t size = 8192;
+    const size_t size = 4096;
     const int runs = 1000; // 每个规模运行的次数
     
     random_device rd;// 随机数种子

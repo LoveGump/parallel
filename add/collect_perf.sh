@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # 更通用的事件组合
-EVENTS="instructions,cycles,task-clock,cache-references,cache-misses,L1-dcache-load-misses,L2-dcache-load-misses,L3-dcache-load-misses"
+EVENTS="instructions,cycles,task-clock,cache-references,cache-misses,L1-dcache-load-misses,LLC-load-misses"
 
-PROGRAMS=("native" "inplace" "recursive" "two_way")
+PROGRAMS=("four" "eight")
 
 for prog in "${PROGRAMS[@]}"; do
     if [[ -x "./$prog" ]]; then

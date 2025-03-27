@@ -1,0 +1,25 @@
+# started on Thu Mar 27 22:44:53 2025
+
+
+ Performance counter stats for './eight':
+
+        31,905,080      cpu_atom/instructions/           #    2.86  insn per cycle              (66.07%)
+        73,903,089      cpu_core/instructions/           #    4.85  insn per cycle              (33.93%)
+        11,172,325      cpu_atom/cycles/                 #    1.593 GHz                         (66.07%)
+        15,230,922      cpu_core/cycles/                 #    2.171 GHz                         (33.93%)
+              7.01 msec task-clock                       #    0.876 CPUs utilized             
+            55,539      cpu_atom/cache-references/       #    7.918 M/sec                       (66.07%)
+            63,773      cpu_core/cache-references/       #    9.092 M/sec                       (33.93%)
+            26,981      cpu_atom/cache-misses/           #   48.58% of all cache refs           (66.07%)
+            18,536      cpu_core/cache-misses/           #   29.07% of all cache refs           (33.93%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+            30,255      cpu_core/L1-dcache-load-misses/                                         (33.93%)
+               136      cpu_atom/LLC-load-misses/                                               (66.07%)
+             1,058      cpu_core/LLC-load-misses/                                               (33.93%)
+
+       0.008005111 seconds time elapsed
+
+       0.007021000 seconds user
+       0.001003000 seconds sys
+
+

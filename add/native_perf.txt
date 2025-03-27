@@ -1,25 +1,25 @@
-# started on Thu Mar 27 18:22:54 2025
+# started on Thu Mar 27 21:40:55 2025
 
 
  Performance counter stats for './native':
 
-        15,735,790      cpu_atom/instructions/           #    1.15  insn per cycle              (93.96%)
-        40,450,084      cpu_core/instructions/           #    1.15  insn per cycle              (6.04%)
-        13,627,446      cpu_atom/cycles/                 #    1.594 GHz                         (93.96%)
-        35,229,934      cpu_core/cycles/                 #    4.120 GHz                         (6.04%)
-              8.55 msec task-clock                       #    0.909 CPUs utilized             
-            41,952      cpu_atom/cache-references/       #    4.906 M/sec                       (93.96%)
-           382,008      cpu_core/cache-references/       #   44.674 M/sec                       (6.04%)
-            20,919      cpu_atom/cache-misses/           #   49.86% of all cache refs           (93.96%)
-           127,866      cpu_core/cache-misses/           #   33.47% of all cache refs           (6.04%)
+        33,424,965      cpu_atom/instructions/           #    1.20  insn per cycle              (10.68%)
+        57,979,079      cpu_core/instructions/           #    1.51  insn per cycle              (89.32%)
+        27,775,028      cpu_atom/cycles/                 #    1.586 GHz                         (10.68%)
+        38,351,469      cpu_core/cycles/                 #    2.191 GHz                         (89.32%)
+             17.51 msec task-clock                       #    0.950 CPUs utilized             
+           333,206      cpu_atom/cache-references/       #   19.032 M/sec                       (10.68%)
+            27,127      cpu_core/cache-references/       #    1.549 M/sec                       (89.32%)
+           181,820      cpu_atom/cache-misses/           #   54.57% of all cache refs           (10.68%)
+            10,372      cpu_core/cache-misses/           #   38.23% of all cache refs           (89.32%)
    <not supported>      cpu_atom/L1-dcache-load-misses/                                       
-           103,614      cpu_core/L1-dcache-load-misses/                                         (6.04%)
-               187      cpu_atom/LLC-load-misses/                                               (93.96%)
-             5,400      cpu_core/LLC-load-misses/                                               (6.04%)
+            10,337      cpu_core/L1-dcache-load-misses/                                         (89.32%)
+             1,133      cpu_atom/LLC-load-misses/                                               (10.68%)
+               564      cpu_core/LLC-load-misses/                                               (89.32%)
 
-       0.009405435 seconds time elapsed
+       0.018434574 seconds time elapsed
 
-       0.007627000 seconds user
-       0.001906000 seconds sys
+       0.016591000 seconds user
+       0.001951000 seconds sys
 
 

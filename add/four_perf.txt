@@ -1,0 +1,25 @@
+# started on Thu Mar 27 22:44:53 2025
+
+
+ Performance counter stats for './four':
+
+        24,943,455      cpu_atom/instructions/           #    1.86  insn per cycle              (60.07%)
+        49,677,842      cpu_core/instructions/           #    2.74  insn per cycle              (39.93%)
+        13,435,640      cpu_atom/cycles/                 #    1.593 GHz                         (60.07%)
+        18,160,284      cpu_core/cycles/                 #    2.153 GHz                         (39.93%)
+              8.44 msec task-clock                       #    0.908 CPUs utilized             
+            60,474      cpu_atom/cache-references/       #    7.168 M/sec                       (60.07%)
+            49,997      cpu_core/cache-references/       #    5.927 M/sec                       (39.93%)
+            26,543      cpu_atom/cache-misses/           #   43.89% of all cache refs           (60.07%)
+            14,894      cpu_core/cache-misses/           #   29.79% of all cache refs           (39.93%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+            15,132      cpu_core/L1-dcache-load-misses/                                         (39.93%)
+                69      cpu_atom/LLC-load-misses/                                               (60.07%)
+               563      cpu_core/LLC-load-misses/                                               (39.93%)
+
+       0.009291184 seconds time elapsed
+
+       0.008417000 seconds user
+       0.001052000 seconds sys
+
+
