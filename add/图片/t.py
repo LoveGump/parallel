@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 读取CSV文件 - 确保文件名称正确
-df = pd.read_csv('/home/gump/pall/add/sum_algorithm_results.csv')
+df = pd.read_csv('D:/my_study_program/code_25Spring/Parallel/add/sum_algorithm_results_win.csv')
 
 # 重命名列为英文
 df = df.rename(columns={
@@ -79,5 +79,5 @@ plt.grid(True, which="both", ls="-", alpha=0.2)
 plt.savefig('speedup_comparison.png', dpi=300, bbox_inches='tight')
 
 print("Charts generated:")
-print("1. execution_time_comparison.png - Execution time comparison")
-print("2. speedup_comparison.png - Speedup ratio comparison")
+print("1. execution_time_comparison_win.png - Execution time comparison")
+print("2. speedup_comparison_win.png - Speedup ratio comparison")

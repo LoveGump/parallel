@@ -2,21 +2,24 @@
 #include <random>
 #include <iomanip>
 #include <functional>
-#include <sys/time.h>
 #include <cmath>
 #include <cstring>
 #include <fstream>
 #include <algorithm>
 #include <vector>
+#include <windows.h> // 添加Windows API头文件
 using namespace std;
 
-// 获取当前时间（微秒级）
+// 获取当前时间（微秒级）- Windows版本
 double get_time() {
-    struct timeval tv;
-    gettimeofday(&tv, NULL);
-    return tv.tv_sec * 1000000.0 + tv.tv_usec;
+    LARGE_INTEGER time, freq;
+    if (!QueryPerformanceFrequency(&freq)) {
+        cerr << "QueryPerformanceFrequency failed!" << endl;
+        return 0;
+    }
+    QueryPerformanceCounter(&time);
+    return (double)(time.QuadPart) * 1000000.0 / (double)(freq.QuadPart);
 }
-
 // 平凡算法（链式）：逐个累加
 double naive_sum(const double* numbers, size_t size) {
     double sum = 0.0;
