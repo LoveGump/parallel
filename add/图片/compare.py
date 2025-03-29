@@ -5,7 +5,7 @@ import os
 import matplotlib.ticker as ticker
 
 # 设置输出目录
-output_dir = 'd:/my_study_program/code_25Spring/Parallel/add/图片/platform_comparison'
+output_dir = 'add/图片/platform_comparison'
 os.makedirs(output_dir, exist_ok=True)
 
 # 读取CSV文件

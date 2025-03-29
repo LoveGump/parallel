@@ -253,7 +253,7 @@ int main() {
     const int runs = 3; // 每个算法运行的次数
     
     // 创建CSV文件
-    ofstream csv_file("sum_algorithm_results_win.csv");
+    ofstream csv_file("sum_algorithm_results_linux.csv");
     if (!csv_file.is_open()) {
         cerr << "无法创建CSV文件！" << endl;
         return 1;
